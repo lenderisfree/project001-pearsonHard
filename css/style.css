@@ -432,3 +432,198 @@ i {
   justify-content: space-around;
   padding: 3rem 3rem 5rem;
 }
+
+#footer i {
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+#footer a {
+  color: var(--primary-text-color);
+}
+
+.contact-info,
+.links-container {
+  width: 20%;
+}
+
+.footer-brand {
+  margin-bottom: 2rem;
+}
+
+.footer-brand h2 {
+  background-color: var(--main-color);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+.contact-info p i {
+  background-color: transparent;
+  padding: 0;
+  color: var(--main-color);
+}
+
+.social-networks p {
+  margin-bottom: 1rem;
+}
+
+.networks {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#footer .networks i {
+  padding: 1rem;
+}
+
+.links-container h4 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.links-container nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-container nav a {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.phone-number {
+  display: flex;
+  border: 1px solid var(--main-color);
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phone-info {
+  color: var(--secondary-color);
+}
+
+/*Mobile navbar*/
+
+#menu,
+#close-menu {
+  font-size: 2rem;
+  padding: 1rem;
+  display: none;
+}
+
+#close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  transition: 0.4s;
+  z-index: 5;
+}
+
+#mobile-navbar.menu-active {
+  left: 0;
+}
+
+#mobile-navbar a {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--main-color);
+}
+
+/*Responsive*/
+
+@media (max-width: 450px) {
+  /*geral*/
+  body {
+    overflow-x: hidden;
+  }
+
+  i {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  /*navbar*/
+  #navbar {
+    display: none;
+  }
+
+  #menu,
+  #close-menu {
+    display: block;
+  }
+
+  .banner {
+    max-width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .banner h2 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  /*Action areas*/
+  .btn {
+    align-self: initial;
+  }
+
+  .image-container {
+    flex: 1 1 100%;
+  }
+
+  #other-services {
+    flex-wrap: wrap;
+  }
+
+  /*About us*/
+  #about {
+    gap: 0;
+  }
+
+  #about-text,
+  #about-data {
+    flex: 1 1 100%;
+  }
+
+  .about-description {
+    gap: 1rem;
+  }
+
+  .about-description i {
+    padding: 0;
+    min-width: 40px;
+  }
+
+  #about #about-data .data {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+
+  /*testimonials*/
+}
