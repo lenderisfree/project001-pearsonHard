@@ -49,6 +49,25 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 
+//Home scroll
+function showHomeIconOnScroll() {
+  const homeIcon = document.querySelector("#link-home");
+  const threshold = 200;
+
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > threshold) {
+      homeIcon.style.display = "block";
+    } else {
+      homeIcon.style.display = "none";
+    }
+  });
+  console.log("teste");
+}
+
+window.addEventListener("load", function () {
+  showHomeIconOnScroll();
+});
+
 //Events
 [menuBtn, closeMenuBtn].forEach((btn) => {
   btn.addEventListener("click", (e) => {
