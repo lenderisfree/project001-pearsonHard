@@ -61,7 +61,6 @@ function showHomeIconOnScroll() {
       homeIcon.style.display = "none";
     }
   });
-  console.log("teste");
 }
 
 window.addEventListener("load", function () {
