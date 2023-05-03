@@ -588,6 +588,10 @@ i {
     font-size: 2rem;
   }
 
+  #link-home {
+    display: none;
+  }
+
   /*navbar*/
   #navbar {
     display: none;
